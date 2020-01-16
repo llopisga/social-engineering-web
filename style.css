@@ -1,0 +1,106 @@
+body {
+    background-image: url("images/bg.gif");
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+.inner-container {
+    width: 400px;
+    height: 530px;
+    position: absolute;
+    top: calc(50vh - 260px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.inner-container2 {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: calc(50vh - 260px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.box h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    padding: 5px 0px;
+}
+
+.box input {
+    display: block;
+    width: 320px;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 0;
+}
+
+.box input:focus,
+.box input:active,
+.box .button:focus,
+.box .button:active {
+    outline: none;
+}
+
+.box .button {
+    background: rgb(21, 124, 30);
+    border: 0;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    width: 320px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.box .button:active {
+    background: #5aff9f;
+}
+
+.box p {
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+}
+
+.box .error {
+    font-size: 20px;
+    text-align: center;
+}
+
+.list {
+    display: block;
+    width: 320px;
+    margin: 20px auto;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 0;
+}
+
+.list input:focus,
+.box input:active,
+.box .button:focus,
+.box .button:active {
+    outline: none;
+}

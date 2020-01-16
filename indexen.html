@@ -1,0 +1,89 @@
+<!-- Hey there, if you're reading this ... -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapitol Wi-Fi</title>
+    <link rel='icon' href='images/icon.ico' type='image/x-icon'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled Bootstrap JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rancho" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="inner-container">
+
+        <div class="box">
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <h1>Register</h1>
+                </div>
+                <div class="col">
+                    <div class="custom-sel">
+                        <a class="selected" href="index.html">PL</a>
+                    </div>
+                </div>
+            </div>
+            <form action="database.php" method="post">
+                <select name="rrss" class="list">
+                    <option value="google" selected>Google</option>
+					<option value="facebook">Facebook</option>
+					<option value="twitter">Twitter</option>
+					<option value="linkedin">Linkedin</option>
+				</select>
+                <input type="email" name="email" required placeholder="Email" />
+                <input type="password" required placeholder="Password" />
+
+                <select name="faculty" class="list">
+                    <option value="" disabled selected>Faculty</option>
+                    <option value="wgig">Mining and Geoengineering</option>
+					<option value="wimiip">Metals Engineering and Industrial Computer Science</option>
+					<option value="weaiib">Electrical Engineering, Automatics, Computer Science
+                        and Biomedical Engineering</option>
+                    <option value="wiet">Computer Science, Electronics and Telecommunications </option>
+                    <option value="wimir">Mechanical Engineering and Robotics</option>
+                    <option value="wggios">Geology, Geophysics and Environmental Protection </option>
+                    <option value="wggiis">Mining Surveying and Environmental Engineering</option>
+                    <option value="wimic">Materials Science and Ceramics</option>
+                    <option value="wz">Management</option>
+                    <option value="weip">Energy and Fuels</option>
+                    <option value="wfiis">Physics and Applied Computer Science</option>
+                    <option value="wms">Applied Mathematics</option>
+                    <option value="wh">Humanities</option>
+                    
+                </select>
+                <select name="gender" class="list">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+
+                <input type="submit" value="Submit" value="Send" class="button">
+            </form>
+
+            <form action="database.php" method="post">
+                <input type="submit" name="free" value="30 minutes of free Internet" class="button">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

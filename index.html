@@ -1,0 +1,82 @@
+<!-- Hey there, if you're reading this ... -->
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapitol Wi-Fi</title>
+    <link rel='icon' href='images/icon.ico' type='image/x-icon'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rancho" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="inner-container">
+
+        <div class="box">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <h1>Zarejestrować</h1>
+                </div>
+                <div class="col">
+                    <div class="custom-sel">
+                        <a class="selected" href="indexen.html">EN</a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="database.php" method="post">
+                <select name="rrss" class="list">
+                    <option value="google" selected>Google</option>
+					<option value="facebook">Facebook</option>
+					<option value="twitter">Twitter</option>
+					<option value="linkedin">Linkedin</option>
+                </select>
+
+                <input type="email" required placeholder="Email" />
+                <input type="password" required placeholder="Password" />
+
+                <select name="faculty" class="list">
+                    <option value="" disabled selected>Wydział</option>
+                    <option value="wgig">Górnictwa i Geoinżynierii</option>
+					<option value="wimiip">Inżynierii Metali i Informatyki Przemysłowej</option>
+					<option value="weaiib">Elektrotechniki, Automatyki, Informatyki
+                        i Inżynierii Biomedycznej</option>
+                    <option value="wiet">Informatyki, Elektroniki i Telekomunikacji</option>
+                    <option value="wimir">Inżynierii Mechanicznej i Robotyki</option>
+                    <option value="wggios">Geologii, Geofizyki i Ochrony Środowiska</option>
+                    <option value="wggiis">Geodezji Górniczej i Inżynierii Środowiska</option>
+                    <option value="wimic">Inżynierii Materiałowej i Ceramiki</option>
+                    <option value="wz">Odlewnictwa</option>
+                    <option value="weip">Energetyki i Paliw</option>
+                    <option value="wfiis">Fizyki i Informatyki Stosowanej</option>
+                    <option value="wms">Matematyki Stosowanej</option>
+                    <option value="wh">Humanistyczny</option>  
+                </select>
+                <select name="gender" class="list">
+                    <option value="" disabled selected>Płeć</option>
+                    <option value="male">Męska</option>
+					<option value="female">Płeć żeńska</option>
+					<option value="other">Inny</option>
+				</select>
+
+                <input type="submit" value="Zatwierdź" value="Send" class="button">
+            </form>
+
+            <form action="database.php" method="post">
+                <input type="submit" name="free" value="30 minut darmowego Internetu" class="button">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
